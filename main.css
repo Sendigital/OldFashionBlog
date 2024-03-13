@@ -522,7 +522,6 @@ button{
     text-decoration: none;
 }
 
-
 /* responsive code */
 
 @media(min-width: 350px) and (max-width: 460px){
@@ -542,6 +541,8 @@ button{
 
     label{
         display: block;
+        color: #000;
+        font-weight: 900;
         font-size: 22px;
         margin-left: 1rem;
     }
@@ -552,7 +553,40 @@ button{
     }
 
     .innerNav{
-        display: none;
+        position: absolute;
+        width: 80%;
+        /* height: 95vh; */
+        padding: 1.8rem;
+        top: 6rem;
+        right: 3px;
+        z-index: 1;
+        background-color: #e6ded2;
+        opacity: .97;
+        border-bottom: 4px solid #000;
+        transform: translate(100%, 0);
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+    }
+
+
+    .navlinks{
+        padding: 0;
+        flex-direction: column;
+        height: 55vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navlinks>a{
+        width: 100%;
+        font-weight: 700;
+        color: #000;
+        font-size: 18px;
+        padding: 0.6rem;
+    }
+
+    #toggle:checked + .innerNav{
+        display: block;
+        transform: none;
     }
 
     .bannerWrapper{
@@ -591,6 +625,10 @@ button{
 
     .smPosts{
         grid-template-columns: repeat(2, 1fr);
+    }
+
+    .smPosts>img{
+        height: 20vh;
     }
 
     .categoriesCont{
