@@ -544,11 +544,11 @@ button{
         color: #000;
         font-weight: 900;
         font-size: 22px;
-        margin-left: 1rem;
+        margin-left: 2rem;
     }
 
     .fa-search{
-        margin-right: 1rem;
+        margin-right: 2rem;
         font-size: 22px;
     }
 
@@ -601,7 +601,8 @@ button{
     }
 
     .bannerWrapper>img{
-        height: 20vh;
+        height: 15vh;
+        width: 20%;
     }
 
     .innerBannerContent{
